@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biblio</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <?php require_once 'section/entete.phtml'; ?>
+
+    <?php require_once 'section/menu.phtml'; ?>
+
+    <div id="contenu">
+        <?= "$uneVariable" ?>
+        <!--option deconnection si connecte-->
+        </br>
+        <label>Username : <input type="text" name="nomTag" value="<?= isset($nomTag)?$nomTag:"" ?>"></label>
+        </br>
+        </br>
+        <label>Password : <input type="password" name="nomTag" value="<?= isset($nomTag)?$nomTag:"" ?>"></label>
+        </br>
+        </br>
+        <input type="submit" name="nomTag" value="submit" ?>
+    
+    </div>
+
+    <?php require_once 'section/pied.phtml'; ?>
+</body>
+
+</html>
